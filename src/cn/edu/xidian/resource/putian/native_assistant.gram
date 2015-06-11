@@ -1,0 +1,51 @@
+#JSGF V1.0;
+
+grammar native_assistant;
+
+<verb> = 开启 |退出 |点  |清空  |设置 |取消|最小化|找|查|帮|请|显示;
+
+<noun> = QQ|我的电脑|酷狗|浏览器|淘宝|京东|天气预报|窗口|回收站|开始菜单|天气|开始菜单|新历书|音乐|桌面;
+
+<click_command> = 点  开始菜单;
+
+<open_command> = 开启  (开始菜单|
+                                                            酷狗 [音乐] |
+                                                                                       回收站 |
+                    	我的电脑|
+                    	谷歌 浏览器|
+                    	QQ|
+                    	记事本 |
+                    	百度 |
+                    	淘宝  |
+                    	京东 
+                    );
+
+<set_command> = 设置 [电脑] 静音;
+
+<unset_command> = 取消  [电脑] 静音;
+
+<clear_command> = 清空  回收站;
+
+<close_command> = 退出  (这个|全部) 窗口;
+
+<minimize_command> = 最小化  (这个|全部) 窗口;
+
+<show_desktop_command> = 显示   桌面;
+
+<query_command> = 查 (天气预报 | 新历书   );
+                                                                                                   
+<search_command> = 找 文件 [<noun>];
+
+<polite> = (麻烦|请) [帮 我];
+
+public <command> = [<polite>] (
+                   <click_command>|
+                   <open_command>|
+                   <set_command> | 
+                   <unset_command> |
+                   <clear_command> |
+                   <close_command> |
+                   <minimize_command> |
+                   <show_desktop_command> |
+                   <query_command> |
+                   <search_command>);

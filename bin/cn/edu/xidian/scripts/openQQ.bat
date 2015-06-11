@@ -1,0 +1,1 @@
+start C:\Users\Public\Desktop\ÌÚÑ¶QQ.lnk

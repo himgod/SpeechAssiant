@@ -1,0 +1,1 @@
+start C:\Users\Administrator\Desktop\¹È¸èä¯ÀÀÆ÷.lnk

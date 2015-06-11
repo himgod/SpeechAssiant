@@ -1,0 +1,1 @@
+start C:\Users\Administrator\Desktop\ø·π∑“Ù¿÷.lnk
